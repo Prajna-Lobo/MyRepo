@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getValue()>count) {
                 mAdapter.addItem(list.get(i));
-                mAdapter.addSectionHeaderItem(i,count+" - "+(count+10),list.get(i));
+                mAdapter.addSectionHeaderItem(i,(count+1)+" - "+(count+10),list.get(i));
                 count+=10;
             }else {
                 mAdapter.addItem(list.get(i));
